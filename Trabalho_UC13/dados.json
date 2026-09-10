@@ -1,0 +1,133 @@
+[
+{
+ "id":1,
+ "titulo":"Naruto",
+ "categoria":"Shonen",
+ "ano":2002,
+ "detalhes":"Jornada de um ninja em fase de crescimento em busca de reconhecimento.",
+ "autor":"Masashi Kishimoto",
+ "episodios":720
+},
+
+{
+ "id":2,
+ "titulo":"One peace",
+ "categoria":"Aventura",
+ "ano":1999,
+ "detalhes":"Jornada de Luffy em busca do sonho de ser rei dos piratas.",
+ "autor":"Eiichiro Oda",
+ "episodios":1160 
+},
+{
+ "id":3,
+ "titulo":"Death Note",
+ "categoria":"Suspense",
+ "ano":2006,
+ "detalhes":"Um estudante encontra um caderno com poderes mortais.",
+ "autor":"Takeshi Obata",
+ "episodios":37
+},
+{
+ "id":4,
+ "titulo":"Attack on Titan",
+ "categoria":"Ação",
+ "ano":2013,
+ "detalhes":"A humanidade luta contra gigantes devoradores." ,
+ "autor":"Haijime Isayama",
+ "episodios":97
+},
+{
+ "id":5,
+ "titulo":"Hunter x Hunter",
+ "categoria":"Aventura",
+ "ano":2011,
+ "detalhes":"Gon busca encontrar seu pai, um renomado hunter.",
+ "autor":"Yoshiro Togashi",
+ "episodios":148
+},
+{
+ "id":6,
+ "titulo":"Demon Slayer",
+ "categoria":"Ação",
+ "ano":2019,
+ "detalhes":"Um jovem caça demonios para salvar sua irmã.",
+ "autor":"Koyoharu Gotouge",
+ "episodios":63
+},
+{
+ "id":7,
+ "titulo":"Jujutsu Kaisen",
+ "categoria":"Ação",
+ "ano":2020,
+ "detalhes":"Luta contra maldições atraves de energia amaldiçoada.",
+ "autor":"Gege Akutami",
+ "episodios":47 
+},
+{
+ "id": 8, 
+ "titulo": "Bleach",
+ "categoria": "Ação", 
+ "ano": 2004, "detalhes": "Ichigo torna-se um substituto de Shinigami.",
+ "autor":"Tite Kubo",
+ "episodios":418
+},
+{
+ "id": 9,
+ "titulo": "Frieren",
+ "categoria": "Fantasia", 
+ "ano": 2023,
+ "detalhes": "Uma elfa reflete sobre a vida após a morte de seus amigos.",
+ "autor":"Kanehito Yamada",
+ "episodios":38 },
+{
+ "id": 10, 
+ "titulo": "Solo Leveling",
+ "categoria": "Ação", 
+ "ano": 2024, 
+ "detalhes": "O caçador mais fraco do mundo busca se tornar o mais forte.",
+ "autor":"Chugong",
+ "episodios":25
+},
+{
+ "id": 11, 
+ "titulo": "Tokyo Ghoul",
+ "categoria": "Terror", 
+ "ano": 2014, "detalhes": "Um estudante torna-se meio humano, meio ghoul.",
+ "autor":"Sui Ishida",
+ "episodios":48
+},
+{
+ "id": 12, 
+ "titulo": "Tokyo Revengers,",
+ "categoria": "Ação", 
+ "ano": 2021,
+ "detalhes": "Um jovem viaja no tempo para salvar sua namorada de gangues.",
+ "autor":"Ken Wakui",
+ "episodios":50
+},
+{
+ "id": 13,
+ "titulo": "Nanatsu no Taizai",
+ "categoria": "Aventura", 
+ "ano": 2014,
+ "detalhes": "Um grupo de cavaleiros renegados busca salvar o reino de Liones.",
+ "autor":"Nakaba Suzuki",
+    "episodios":100 },
+{
+ "id": 14,
+ "titulo": "The Apothecary Diaries (Apotecaria)",
+ "categoria": "Mistério",
+ "ano": 2023,
+ "detalhes": "Uma jovem boticária resolve mistérios na corte imperial.",
+ "autor":"Natsu Hyuga",
+ "episodios":48},
+{
+ "id": 15,
+ "titulo": "The Rising of the Shield Hero(Heroi de escudo)",
+ "categoria": "Fantasia",
+ "ano": 2019,
+ "detalhes": "Um jovem é invocado como herói e deve evoluir usando apenas um escudo.",
+ "autor":"Aneko Yusagi",
+ "episodios":78
+ }
+]

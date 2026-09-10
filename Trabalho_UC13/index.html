@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        Body { font-family: 'Arial', sans-serif; background-color: #f0f2f5; padding: 20px; }
+        .container { max-width: 600px; margin: auto; }
+        .busca { display: flex; gap: 10px; margin-bottom: 20px; }
+        Input { flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        Button { padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        .card { background: white; padding: 15px; margin-bottom: 10px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Catálogo de Animes</h1>
+    
+    <div class="busca">
+        <input type="text" id="campoBusca" placeholder="Digite o nome do anime...">
+        <button onclick="buscarAnimes()">Pesquisar</button>
+    </div>
+
+    <div id="resultado"></div>
+</div>
+<h3>Animes disponiveis para consulta:</h3>
+<ul>
+    <li>Naruto</li>
+  <li>One Piece</li>
+    <li>Death Note</li>
+    <li>Attack on Titan</li>
+    <li>Hunter x Hunter</li>
+    <li>Demon Slayer</li>
+    <li>Jujutsu Kaisen</li>
+    <li>Bleach</li>
+    <li>Frieren</li>
+    <li>Solo Leving</li>
+    <li>Tokyo Ghoul</li>
+    <li>Tokyo Revengers</li>
+    <li>Nanatsu No Taizai</li>
+    <li>The Apothecary Diaries</li>
+    <li>The Rising of the Shield Hero</li>
+</ul>
+
+<script>
+   async function buscarAnimes() {
+    const termo = document.getElementById('campoBusca').value;
+    const url = `http://localhost:3000/buscar?titulo=${termo}`;
+    
+    console.log("Tentando acessar:", url); // Veja isso no console F12
+
+    try {
+        const resposta = await fetch(url);
+        if (!resposta.ok) throw new Error("Erro na rede: " + resposta.status);
+        
+        const animes = await resposta.json();
+        console.log("Animes recebidos:", animes); // Veja se os dados chegaram aqui
+        const container = document.getElementById('resultado');
+    container.innerHTML = ''; 
+    animes.forEach(a => {
+        container.innerHTML += `
+            <div class="card">
+                <h3>${a.titulo}</h3>
+                <p><strong>Categoria:</strong> ${a.categoria}</p>
+                <p><strong>Detalhes:</strong> ${a.detalhes}</p>
+                <p><strong>Ano:</strong> ${a.ano}</p>
+                <p><strong>Autor:</strong> ${a.autor}</p>
+                <p><strong>Episodios:</strong> ${a.episodios}</p>
+            </div>    `;
+            console.log
+    });
+
+        // ... resto do seu código de preenchimento do HTML
+    } catch (erro) {
+        console.error("Erro capturado:", erro); // Se der erro, ele aparece aqui
+    }
+    
+
+
+}
+
+
+
+</script>
+
+    
+</body>
+</html>
